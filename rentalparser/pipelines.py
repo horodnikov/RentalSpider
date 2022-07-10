@@ -23,19 +23,22 @@ class RentalparserPipeline:
     def process_item(self, item, spider):
         if spider.name == 'tutti':
             item['publication'] = self.str_to_date(item['publication'])
+            item['domain'] = item['domain'][0]
             for key, value in item['characteristics'].items():
                 if value:
                     if key == 'Miete CHF':
-                        match = re.fullmatch(r'(\d)\S(\d+)\W+(\D+)',
+                        match = re.fullmatch(r'(\d+)\S(\d+)\W+(\D+)',
                                              value.strip())
                         if match:
                             item['characteristics'][key] = {
                                 match[3]: int(match[1] + match[2])
                                     }
+                        else:
+                            item['characteristics'][key] = None
                     elif key == 'Fläche':
                         match = re.fullmatch(r'(\d+)(\D+)', value)
                         if match:
-                            item['characteristics'][key] = {match[2]: int(match[1])}
+                            item['characteristics'][key] = int(match[1])
                     elif key == 'PLZ':
                         item['characteristics'][key] = int(value)
                     elif key == 'Zimmer':
@@ -45,7 +48,6 @@ class RentalparserPipeline:
             collection = self.db[spider.name]
             collection.update_one(
                 {'link': item['link']}, {"$set": item}, upsert=True)
-        print()
         return item
 
     @staticmethod
