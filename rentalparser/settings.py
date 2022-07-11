@@ -33,9 +33,9 @@ CONCURRENT_REQUESTS_PER_IP = 16
 # Disable cookies (enabled by default)
 COOKIES_ENABLED = True
 
-LOG_ENABLED = True
-LOG_LEVEL = "INFO" # DEBUG, WARN, ERROR
-LOG_FILE = "log.txt"
+# LOG_ENABLED = True
+# LOG_LEVEL = "INFO" # DEBUG, WARN, ERROR
+# LOG_FILE = "log.txt"
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False

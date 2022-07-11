@@ -1,0 +1,139 @@
+2022-07-11 11:58:23 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: rentalparser)
+2022-07-11 11:58:23 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.8.10 (default, Mar 15 2022, 12:22:08) - [GCC 9.4.0], pyOpenSSL 22.0.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 37.0.4, Platform Linux-5.13.0-52-generic-x86_64-with-glibc2.29
+2022-07-11 11:58:23 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'rentalparser',
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 1,
+ 'LOG_FILE': 'log.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'rentalparser.spiders',
+ 'SPIDER_MODULES': ['rentalparser.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'}
+2022-07-11 11:58:23 [scrapy.extensions.telnet] INFO: Telnet Password: e958626c03317750
+2022-07-11 11:58:24 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-07-11 11:58:24 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-07-11 11:58:24 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-07-11 11:58:24 [scrapy.middleware] INFO: Enabled item pipelines:
+['rentalparser.pipelines.RentalparserPipeline']
+2022-07-11 11:58:24 [scrapy.core.engine] INFO: Spider opened
+2022-07-11 11:58:24 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-07-11 11:58:24 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-07-11 11:59:24 [scrapy.extensions.logstats] INFO: Crawled 53 pages (at 53 pages/min), scraped 43 items (at 43 items/min)
+2022-07-11 12:00:24 [scrapy.extensions.logstats] INFO: Crawled 102 pages (at 49 pages/min), scraped 86 items (at 43 items/min)
+2022-07-11 12:01:24 [scrapy.extensions.logstats] INFO: Crawled 152 pages (at 50 pages/min), scraped 130 items (at 44 items/min)
+2022-07-11 12:02:24 [scrapy.extensions.logstats] INFO: Crawled 203 pages (at 51 pages/min), scraped 178 items (at 48 items/min)
+2022-07-11 12:03:24 [scrapy.extensions.logstats] INFO: Crawled 252 pages (at 49 pages/min), scraped 227 items (at 49 items/min)
+2022-07-11 12:04:24 [scrapy.extensions.logstats] INFO: Crawled 302 pages (at 50 pages/min), scraped 277 items (at 50 items/min)
+2022-07-11 12:05:24 [scrapy.extensions.logstats] INFO: Crawled 348 pages (at 46 pages/min), scraped 323 items (at 46 items/min)
+2022-07-11 12:06:24 [scrapy.extensions.logstats] INFO: Crawled 397 pages (at 49 pages/min), scraped 372 items (at 49 items/min)
+2022-07-11 12:07:24 [scrapy.extensions.logstats] INFO: Crawled 446 pages (at 49 pages/min), scraped 420 items (at 48 items/min)
+2022-07-11 12:08:24 [scrapy.extensions.logstats] INFO: Crawled 492 pages (at 46 pages/min), scraped 467 items (at 47 items/min)
+2022-07-11 12:09:24 [scrapy.extensions.logstats] INFO: Crawled 543 pages (at 51 pages/min), scraped 518 items (at 51 items/min)
+2022-07-11 12:10:24 [scrapy.extensions.logstats] INFO: Crawled 594 pages (at 51 pages/min), scraped 569 items (at 51 items/min)
+2022-07-11 12:11:24 [scrapy.extensions.logstats] INFO: Crawled 643 pages (at 49 pages/min), scraped 618 items (at 49 items/min)
+2022-07-11 12:12:24 [scrapy.extensions.logstats] INFO: Crawled 692 pages (at 49 pages/min), scraped 667 items (at 49 items/min)
+2022-07-11 12:13:24 [scrapy.extensions.logstats] INFO: Crawled 740 pages (at 48 pages/min), scraped 715 items (at 48 items/min)
+2022-07-11 12:14:24 [scrapy.extensions.logstats] INFO: Crawled 790 pages (at 50 pages/min), scraped 765 items (at 50 items/min)
+2022-07-11 12:15:24 [scrapy.extensions.logstats] INFO: Crawled 840 pages (at 50 pages/min), scraped 815 items (at 50 items/min)
+2022-07-11 12:16:24 [scrapy.extensions.logstats] INFO: Crawled 890 pages (at 50 pages/min), scraped 865 items (at 50 items/min)
+2022-07-11 12:17:24 [scrapy.extensions.logstats] INFO: Crawled 938 pages (at 48 pages/min), scraped 913 items (at 48 items/min)
+2022-07-11 12:18:24 [scrapy.extensions.logstats] INFO: Crawled 990 pages (at 52 pages/min), scraped 965 items (at 52 items/min)
+2022-07-11 12:19:24 [scrapy.extensions.logstats] INFO: Crawled 1038 pages (at 48 pages/min), scraped 1013 items (at 48 items/min)
+2022-07-11 12:20:24 [scrapy.extensions.logstats] INFO: Crawled 1084 pages (at 46 pages/min), scraped 1059 items (at 46 items/min)
+2022-07-11 12:21:24 [scrapy.extensions.logstats] INFO: Crawled 1136 pages (at 52 pages/min), scraped 1111 items (at 52 items/min)
+2022-07-11 12:22:24 [scrapy.extensions.logstats] INFO: Crawled 1185 pages (at 49 pages/min), scraped 1159 items (at 48 items/min)
+2022-07-11 12:23:24 [scrapy.extensions.logstats] INFO: Crawled 1234 pages (at 49 pages/min), scraped 1209 items (at 50 items/min)
+2022-07-11 12:24:24 [scrapy.extensions.logstats] INFO: Crawled 1284 pages (at 50 pages/min), scraped 1259 items (at 50 items/min)
+2022-07-11 12:25:24 [scrapy.extensions.logstats] INFO: Crawled 1333 pages (at 49 pages/min), scraped 1308 items (at 49 items/min)
+2022-07-11 12:26:24 [scrapy.extensions.logstats] INFO: Crawled 1383 pages (at 50 pages/min), scraped 1358 items (at 50 items/min)
+2022-07-11 12:27:24 [scrapy.extensions.logstats] INFO: Crawled 1431 pages (at 48 pages/min), scraped 1406 items (at 48 items/min)
+2022-07-11 12:28:24 [scrapy.extensions.logstats] INFO: Crawled 1478 pages (at 47 pages/min), scraped 1453 items (at 47 items/min)
+2022-07-11 12:29:24 [scrapy.extensions.logstats] INFO: Crawled 1526 pages (at 48 pages/min), scraped 1501 items (at 48 items/min)
+2022-07-11 12:30:24 [scrapy.extensions.logstats] INFO: Crawled 1577 pages (at 51 pages/min), scraped 1552 items (at 51 items/min)
+2022-07-11 12:31:24 [scrapy.extensions.logstats] INFO: Crawled 1628 pages (at 51 pages/min), scraped 1602 items (at 50 items/min)
+2022-07-11 12:31:30 [scrapy.core.scraper] ERROR: Error processing {'characteristics': {'Bezirk': 'Winterthur',
+                     'Fläche': '400m²',
+                     'Miete CHF': {'pro Monat': 1950},
+                     'PLZ': '8000',
+                     'Typ': 'Mietangebote',
+                     'Zimmer': 'Mehr als 7'},
+ 'domain': 'tutti.ch',
+ 'link': 'https://www.tutti.ch/de/vi/zuerich/city/immobilien/haeuser/allein-wohnen-und-doch-zusammen/34282008',
+ 'place_type': 'Häuser',
+ 'publication': datetime.datetime(2022, 7, 11, 0, 0),
+ 'title': 'Allein Wohnen und doch zusammen...'}
+Traceback (most recent call last):
+  File "/home/ihor/PycharmProjects/RentalSpider/venv/lib/python3.8/site-packages/twisted/internet/defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/ihor/PycharmProjects/RentalSpider/venv/lib/python3.8/site-packages/scrapy/utils/defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/ihor/PycharmProjects/RentalSpider/rentalparser/pipelines.py", line 45, in process_item
+    item['characteristics'][key] = float(value)
+ValueError: could not convert string to float: 'Mehr als 7'
+2022-07-11 12:32:24 [scrapy.extensions.logstats] INFO: Crawled 1677 pages (at 49 pages/min), scraped 1651 items (at 49 items/min)
+2022-07-11 12:33:24 [scrapy.extensions.logstats] INFO: Crawled 1726 pages (at 49 pages/min), scraped 1700 items (at 49 items/min)
+2022-07-11 12:34:24 [scrapy.extensions.logstats] INFO: Crawled 1773 pages (at 47 pages/min), scraped 1747 items (at 47 items/min)
+2022-07-11 12:35:24 [scrapy.extensions.logstats] INFO: Crawled 1820 pages (at 47 pages/min), scraped 1794 items (at 47 items/min)
+2022-07-11 12:36:24 [scrapy.extensions.logstats] INFO: Crawled 1869 pages (at 49 pages/min), scraped 1843 items (at 49 items/min)
+2022-07-11 12:37:24 [scrapy.extensions.logstats] INFO: Crawled 1920 pages (at 51 pages/min), scraped 1894 items (at 51 items/min)
+2022-07-11 12:38:24 [scrapy.extensions.logstats] INFO: Crawled 1971 pages (at 51 pages/min), scraped 1945 items (at 51 items/min)
+2022-07-11 12:39:24 [scrapy.extensions.logstats] INFO: Crawled 2017 pages (at 46 pages/min), scraped 1991 items (at 46 items/min)
+2022-07-11 12:39:38 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <410 https://www.tutti.ch/de/vi/bern/immobilien/wohnungen/schoene-wohnung-in-bern-bethlehem/10004374331>: HTTP status code is not handled or not allowed
+2022-07-11 12:40:24 [scrapy.extensions.logstats] INFO: Crawled 2066 pages (at 49 pages/min), scraped 2039 items (at 48 items/min)
+2022-07-11 12:41:24 [scrapy.extensions.logstats] INFO: Crawled 2114 pages (at 48 pages/min), scraped 2087 items (at 48 items/min)
+2022-07-11 12:42:24 [scrapy.extensions.logstats] INFO: Crawled 2162 pages (at 48 pages/min), scraped 2135 items (at 48 items/min)
+2022-07-11 12:43:24 [scrapy.extensions.logstats] INFO: Crawled 2210 pages (at 48 pages/min), scraped 2183 items (at 48 items/min)
+2022-07-11 12:44:24 [scrapy.extensions.logstats] INFO: Crawled 2259 pages (at 49 pages/min), scraped 2232 items (at 49 items/min)
+2022-07-11 12:45:24 [scrapy.extensions.logstats] INFO: Crawled 2307 pages (at 48 pages/min), scraped 2280 items (at 48 items/min)
+2022-07-11 12:46:18 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-07-11 12:46:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1567786,
+ 'downloader/request_count': 2351,
+ 'downloader/request_method_count/GET': 2351,
+ 'downloader/response_bytes': 52256969,
+ 'downloader/response_count': 2351,
+ 'downloader/response_status_count/200': 2350,
+ 'downloader/response_status_count/410': 1,
+ 'dupefilter/filtered': 12,
+ 'elapsed_time_seconds': 2873.837242,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 7, 11, 9, 46, 18, 335382),
+ 'httpcompression/response_bytes': 243989640,
+ 'httpcompression/response_count': 2350,
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/410': 1,
+ 'item_scraped_count': 2324,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 58,
+ 'memusage/max': 1899069440,
+ 'memusage/startup': 1899069440,
+ 'request_depth_max': 11,
+ 'response_received_count': 2351,
+ 'scheduler/dequeued': 2351,
+ 'scheduler/dequeued/memory': 2351,
+ 'scheduler/enqueued': 2351,
+ 'scheduler/enqueued/memory': 2351,
+ 'start_time': datetime.datetime(2022, 7, 11, 8, 58, 24, 498140)}
+2022-07-11 12:46:18 [scrapy.core.engine] INFO: Spider closed (finished)
