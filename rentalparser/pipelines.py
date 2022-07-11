@@ -22,7 +22,7 @@ class RentalparserPipeline:
 
     def process_item(self, item, spider):
         if spider.name == 'tutti':
-            item['publication'] = self.str_to_date(item['publication'])
+            # item['publication'] = self.str_to_date(item['publication'])
             item['domain'] = item['domain'][0]
             for key, value in item['characteristics'].items():
                 if value:
