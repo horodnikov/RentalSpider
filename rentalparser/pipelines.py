@@ -22,8 +22,9 @@ class RentalparserPipeline:
 
     def process_item(self, item, spider):
         if spider.name == 'tutti':
-            # item['publication'] = self.str_to_date(item['publication'])
             item['domain'] = item['domain'][0]
+            if item['location']:
+                item['location'] = item['location'].split(', ')[0]
             for key, value in item['characteristics'].items():
                 if value:
                     if key == 'Miete CHF':
@@ -42,7 +43,14 @@ class RentalparserPipeline:
                     elif key == 'PLZ':
                         item['characteristics'][key] = int(value)
                     elif key == 'Zimmer':
-                        item['characteristics'][key] = float(value)
+                        if self.isfloat(value):
+                            item['characteristics'][key] = float(value)
+                        else:
+                            search = self.is_search(value)
+                            if search:
+                                item['characteristics'][key] = search
+                            else:
+                                item['characteristics'][key] = None
                     else:
                         item['characteristics'][key] = value.strip()
             collection = self.db[spider.name]
@@ -57,3 +65,19 @@ class RentalparserPipeline:
                 return timestring.Date(f'{date_string}').date
         except timestring.TimestringInvalid:
             pass
+
+    @staticmethod
+    def isfloat(num):
+        try:
+            float(num)
+            return True
+        except ValueError:
+            return False
+
+    @staticmethod
+    def is_search(value):
+        try:
+            search = re.search(r'\d+', value).group()
+            return search
+        except ValueError:
+            return False

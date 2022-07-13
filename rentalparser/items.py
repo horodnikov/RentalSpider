@@ -11,6 +11,7 @@ class RentalparserItem(scrapy.Item):
     link = scrapy.Field()
     domain = scrapy.Field()
     title = scrapy.Field()
+    location = scrapy.Field()
     publication = scrapy.Field()
     place_type = scrapy.Field()
     characteristics = scrapy.Field()

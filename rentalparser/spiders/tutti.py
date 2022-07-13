@@ -35,6 +35,7 @@ class TuttiSpider(scrapy.Spider):
         title = response.xpath('//h1[contains(@class, "")]/text()').get()
         publication = response.xpath(
             '//div[contains(@class, "9mKtt pRm6L")]//text()').get()
+        location = response.xpath('//div[@class = "IcWA2"]/div//text()').get()
         characteristics_div = response.xpath(
             '//div[contains(@class,"MuiBox-root css-xdf4mo")]')
         characteristics = {}
@@ -44,5 +45,6 @@ class TuttiSpider(scrapy.Spider):
         place_type = response.xpath(
             '//div[contains(@class, "MuiBox-root css-8uhtka")]/a//text()').get()
         yield RentalparserItem(link=link, domain=domain, title=title,
-                               publication=publication, place_type=place_type,
+                               location=location, publication=publication,
+                               place_type=place_type,
                                characteristics=characteristics)
